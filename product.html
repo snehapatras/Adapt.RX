@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Products | Adapt.RX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="product.js">
+</head>
+<body>
+    <div class="announcement-bar">
+        <p>Free worldwide shipping on orders over $200 | Express Delivery Available</p>
+    </div>
+
+    <header class="product-header">
+        <div class="top-bar">
+            <div class="contact-info">
+                <a href="tel:+92-234567890"><i class="fas fa-phone"></i> 24/7 Support: +92-234567890</a>
+                <a href="mailto:support@adaptrx.com"><i class="fas fa-envelope"></i> support@adaptrx.com</a>
+            </div>
+            <div class="top-links">
+                <a href="#track"><i class="fas fa-truck"></i> Track Order</a>
+                <select class="currency-selector">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="PKR">PKR</option>
+                </select>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Adapt.RX</h1>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="prescriptions.html">Prescriptions</a>
+                <a href="shipping.html">Shipping</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#search" class="search-toggle"><i class="fas fa-search"></i></a>
+                <a href="#account"><i class="fas fa-user"></i></a>
+                <a href="#cart" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="products-main">
+        <section class="products-hero">
+            <h1>Medical Products</h1>
+            <p>Browse our extensive range of high-quality medical supplies</p>
+        </section>
+
+        <section class="product-filters">
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-options">
+                <select class="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="prescription">Prescription Medicines</option>
+                    <option value="supplies">Medical Supplies</option>
+                    <option value="equipment">Medical Equipment</option>
+                </select>
+                <select class="sort-filter">
+                    <option value="popular">Most Popular</option>
+                    <option value="newest">Newest First</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="featured-categories">
+            <h2>Browse by Category</h2>
+            <div class="category-tabs">
+                <button class="category-tab"> All Products</button>
+                <button class="category-tab"><a href="prescriptionmedicines.html">prescriptionmedicines</a></button>
+                <button class="category-tab"><a href="medicalsupplies.html">Mediacl Supplies</a></button>
+                <button class="category-tab"><a href="medicalequipment.html">Medical Equipment</a></button>
+                <button class="category-tab"><a href="personalcare.html">Personal Care Product</a></button>
+            </div>
+        </section>
+
+        <section class="products-grid">
+            <div class="product-card">
+                <span class="product-badge">FDA Approved</span>
+                <img src="images for html/Coronavirus-update-Social-1.jpg" alt="Medical Supplies">
+                <div class="product-details">
+                    <h3>Surgical Masks (N95)</h3>
+                    <p class="product-description">Medical-grade protective masks with 95% filtration efficiency</p>
+                    <div class="product-meta">
+                        <span class="stock">In Stock</span>
+                        <span class="price">$11.77</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-card">
+                <span class="product-badge">Best Seller</span>
+                <img src="images for html/inheler.avif" alt="Medical Equipment">
+                <div class="product-details">
+                    <h3>An Inhaler</h3>
+                    <p class="product-description">An Inhalers are used to treat respiratory conditions such as asthma.</p>
+                    <div class="product-meta">
+                        <span class="stock">In Stock</span>
+                        <span class="price">$25.86</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="product-card">
+                <span class="product-badge">Premium</span>
+                <img src="images for html/How-to-Read-Digital-Thermometer-for-Accurate-Results.avif" alt="Medical Equipment">
+                <div class="product-details">
+                    <h3>Digital Thermometer</h3>
+                    <p class="product-description">Professional-grade digital thermometer with LCD display</p>
+                    <div class="product-meta">
+                        <span class="stock">In Stock</span>
+                        <span class="price">$39.99</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="product-badge">Best Seller</span>
+                <img src="images for html/Shutterstock_1219873909.webp" alt="Medical Supplies">
+                <div class="product-details">
+                    <h3>First Aid Kit</h3>
+                    <p class="product-description">Comprehensive emergency medical kit for home and travel</p>
+                    <div class="product-meta">
+                        <span class="stock">In Stock</span>
+                        <span class="price">$49.99</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="product-badge">Best Seller</span>
+                <img src="images for html/devision-stage-BloodPressure_1_1440x1100-nci.jpg" alt="Medical Equipment">
+                <div class="product-details">
+                    <h3>Blood Pressure Monitor</h3>
+                    <p class="product-description">Digital blood pressure monitor with memory function</p>
+                    <div class="product-meta">
+                        <span class="stock">In Stock</span>
+                        <span class="price">$79.99</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <span class="product-badge">Best Seller</span>
+                <img src="images for html/LOOKEE-Fingertip-Sports-Oxygen-Heart_1080x.webp" alt="Medical Equipment">
+                <div class="product-details"> 
+                    <h3>Finger Pulse Oximeter</h3>
+                    <p class="product-description">The pulse oximeter uses a cold light source that shines a light through the fingertip, making the tip appear to be red.</p>
+                    <div class="product-meta">
+                        <span class="stock">In Stock</span>
+                        <span class="price">$23.97</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <span class="product-badge">Best Seller</span>
+                <img src="images for html/Oro-Pharyngeal-Airway-.png" alt="Medical Equipment">
+                <div class="product-details">
+                    <h3>Airway Guedel</h3>
+                    <p class="product-description">Airway Guedel a medical device that keeps a patients airway open.</p>
+                    <div class="product-meta">
+                        <span class="stock">In Stock</span>
+                        <span class="price">$22.24</span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="add-to-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                </div>
+
+                
+        </section>
+
+        <section class="product-features">
+            <div class="feature-card">
+                <i class="fas fa-truck"></i>
+                <h3>Global Shipping</h3>
+                <p>Fast delivery worldwide</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure Payment</h3>
+                <p>100% secure transaction</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Round-the-clock assistance</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-undo"></i>
+                <h3>Easy Returns</h3>
+                <p>30-day return policy</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="product-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#shipping">Shipping Policy</a>
+                        <a href="#returns">Returns</a>
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +92-234567890</p>
+                    <p><i class="fas fa-envelope"></i> support@adaptrx.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Secure Payment</h3>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Adapt.RX. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="product.js"></script>
+</body>
+</html> 

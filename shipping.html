@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Shipping Services | Adapt.RX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shipping.css">
+</head>
+<body>
+    <div class="announcement-bar">
+        <p>Express Worldwide Delivery | Temperature-Controlled Shipping Available</p>
+    </div>
+
+    <header class="shipping-header">
+        <div class="top-bar">
+            <div class="contact-info">
+                <a href="tel:+92-234567890"><i class="fas fa-phone"></i> Shipping Support: +92-234567890</a>
+                <a href="mailto:shipping@adaptrx.com"><i class="fas fa-envelope"></i> shipping@adaptrx.com</a>
+            </div>
+            <div class="top-links">
+                <a href="#track"><i class="fas fa-truck"></i> Track Shipment</a>
+                <select class="currency-selector">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="PKR">PKR</option>
+                </select>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html"><h1>Adapt.RX</h1></a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="prescriptions.html">Prescriptions</a>
+                <a href="shipping.html" class="active">Shipping</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#track" class="track-btn">
+                    <i class="fas fa-search"></i> Track Order
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="shipping-main">
+        <section class="shipping-hero">
+            <div class="hero-content">
+                <h1>Global Medical Supply Shipping</h1>
+                <p>Reliable worldwide delivery with temperature-controlled shipping options</p>
+                <div class="hero-buttons">
+                    <a href="#rates" class="btn primary">Check Rates</a>
+                    <a href="track-shipping.html" class="btn secondary">Track Shipment</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="shipping-services">
+            <h2>Our Shipping Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="images for html/S5-DHL-Express.jpg" alt="Express Shipping">
+                    <h3>Express Delivery</h3>
+                    <p>2-3 business days worldwide delivery</p>
+                    <ul>
+                        <li>Door-to-door tracking</li>
+                        <li>Temperature monitoring</li>
+                        <li>Priority handling</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <img src="images for html/shipping.jpg" alt="Standard Shipping">
+                    <h3>Standard Shipping</h3>
+                    <p>5-7 business days delivery</p>
+                    <ul>
+                        <li>Cost-effective option</li>
+                        <li>Full tracking</li>
+                        <li>Secure packaging</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <img src="images for html/Cold-chain-vs-normal-logistics-1024x645.webp" alt="Cold Chain Shipping">
+                    <h3>Cold Chain Shipping</h3>
+                    <p>Temperature-controlled delivery</p>
+                    <ul>
+                        <li>2-8°C maintenance</li>
+                        <li>24/7 temperature monitoring</li>
+                        <li>Validated packaging</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="shipping-calculator">
+            <div class="calculator-container">
+                <h2>Shipping Rate Calculator</h2>
+                <form class="calculator-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>From Country</label>
+                            <select required>
+                                <option value="">Select Country</option>
+                                <option value="US">United States</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="EU">European Union</option>
+                                <option value="PKR">Pakistan</option>
+                                <option value="SAR">Saudi Arabia</option>
+                                <option value="UAE">United Arab Emirates </option>
+                                <option value="TL">Turkey</option>
+                                <option value="MYR">malaysia</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>To Country</label>
+                            <select required>
+                                <option value="">Select Country</option>
+                                <option value="US">United States</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="EU">European Union</option>
+                                <option value="PKR">Pakistan</option>
+                                <option value="SAR">Saudi Arabia</option>
+                                <option value="UAE">United Arab Emirates</option>
+                                <option value="TL">Turkey</option>
+                                <option value="MYR">malaysia</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Package Weight (kg)</label>
+                            <input type="number" min="0.1" step="0.1" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Service Type</label>
+                            <select required>
+                                <option value="express">Express Delivery</option>
+                                <option value="standard">Standard Shipping</option>
+                                <option value="cold">Cold Chain Shipping</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="calculate-btn">Calculate Rate</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="shipping-partners">
+            <h2>Our Global Partners</h2>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="images for html/DHL 445.svg" alt="DHL-Express">
+                </div>
+                <div class="partner-logo">
+                    <img src="images for html/FEDLOGO.png" alt="FED-EX">
+                </div>
+                <div class="partner-logo">
+                    <img src="images for html/ups123.png" alt="UPS">
+                </div>
+                <div class="partner-logo">
+                    <img src="images for html/1727793492002.jpg" alt="worldwide">
+                </div>
+            </div>
+        </section>
+
+        <section class="shipping-features">
+            <div class="feature-card">
+                <i class="fas fa-globe"></i>
+                <h3>Global Coverage</h3>
+                <p>Shipping to over 150 countries</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-temperature-low"></i>
+                <h3>Temperature Control</h3>
+                <p>Maintained throughout transit</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Secure Handling</h3>
+                <p>End-to-end security</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-clock"></i>
+                <h3>24/7 Support</h3>
+                <p>Round-the-clock assistance</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="shipping-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footer-section">
+                    <h3>Contact Support</h3>
+                    <p><i class="fas fa-phone"></i> +92-234567890</p>
+                    <p><i class="fas fa-envelope"></i> shipping@adaptrx.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#rates">Shipping Rates</a>
+                    <a href="#track">Track Shipment</a>
+                    <a href="#terms">Terms & Conditions</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Certifications</h3>
+                    <div class="certifications">
+                        <img src="images for html/gdp.jpg" alt="GDP Certified">
+                        <img src="images for html/iso.jpg" alt="ISO Certified">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Adapt.RX Shipping. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

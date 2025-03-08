@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine List | MediGlobal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="permedicines.css">
+    
+</head>
+<body>
+    <div class="announcement-bar">
+        <p>Licensed Pharmacy | FDA Approved Medicines | 24/7 Support</p>
+    </div>
+
+    <header class="medicine-header">
+        <div class="top-bar">
+            <div class="contact-info">
+                <a href="tel:+1234567890"><i class="fas fa-phone"></i> Support: +92-234567890</a>
+                <a href="mailto:pharmacy@adaptrx.com"><i class="fas fa-envelope"></i> pharmacy@adaptrx.com</a>
+            </div>
+            <div class="top-links">
+                <a href="#track"><i class="fas fa-truck"></i> Track Order</a>
+                <select class="language-selector">
+                    <option value="en">English</option>
+                    <option value="ar">arabic</option>
+                    <option value="fr">Français</option>
+                    <option value="ur">Urdu</option>
+                </select>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html"><h1>Adapt.RX</h1></a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="prescriptions.html">Prescriptions</a>
+                <a href="shipping.html">Shipping</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#search" class="search-toggle"><i class="fas fa-search"></i></a>
+                <a href="#account"><i class="fas fa-user"></i></a>
+                <a href="#cart" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="medicine-main">
+        <section class="medicine-search">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="medicineSearch" placeholder="Search medicines...">
+                    <button type="button"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-options">
+                    <select id="categoryFilter">
+                        <option value="">All Categories</option>
+                        <option value="prescription">Prescription</option>
+                        <option value="otc">Over The Counter</option>
+                        <option value="generic">Generic Medicines</option>
+                    </select>
+                    <select id="sortFilter">
+                        <option value="name">Sort by Name</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="medicine-categories">
+            <div class="category-grid">
+                <div class="category-card" data-category="cardiovascular">
+                    <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae" alt="Cardiovascular">
+                    <h3>Cardiovascular</h3>
+                    <p>Heart and blood pressure medications</p>
+                </div>
+                <div class="category-card" data-category="diabetes">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118" alt="Diabetes">
+                    <h3>Diabetes</h3>
+                    <p>Blood sugar control medicines</p>
+                </div>
+                <!-- Add more category cards -->
+            </div>
+        </section>
+
+        <section class="medicine-list">
+            <h2>Featured Medicines</h2>
+            <div class="medicine-grid">
+                <div class="medicine-card" data-category="cardiovascular" data-name="EZIDAY">
+                    <div class="medicine-image">
+                        <img src="images for html/Eziday-tablets-25-mg-1.webp" alt="blood pressure">
+                        <span class="prescription-badge">Prescription Required</span>
+                    </div>
+                    <div class="medicine-info">
+                        <h3>Eziday-tablets-25-mg</h3>
+                        <p class="generic-name">Generic Name: Eziday</p>
+                        <p class="description">EZIDAY is used to treat high blood pressure (hypertension). it is also used to lower the risk of stroke in certain pople with heart disease. losartan is used to slow long-term kidney damage in people with type 2 diabetes who also have high blood pressure.</p>
+                        <div class="medicine-meta">
+                            <span class="price">$29.99</span>
+                            <span class="stock">In Stock</span>
+                        </div>
+                        <div class="medicine-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="view-details">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="medicine-card" data-category="diabetes" data-name="Vildomet">
+                    <div class="medicine-image">
+                        <img src="images for html/vildomet.jpg" alt="VILDOMET">
+                        <span class="prescription-badge">Prescription Required</span>
+                    </div>
+                    <div class="medicine-info">
+                        <h3>VILDOMET</h3>
+                        <p class="generic-name">Generic Name: Metformin HCl</p>
+                        <p class="description">Vildomet 50mg Tablet is a medicine used to treat type 2 diabetes mellitus. it is used together with a healthy diet and regular exercise to control blood sugar levels.</p>
+                        <div class="medicine-meta">
+                            <span class="price">$19.99</span>
+                            <span class="stock">In Stock</span>
+                        </div>
+                        <div class="medicine-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="view-details">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="medicine-card" data-category="pain" data-name="NEBEROL">
+                    <div class="medicine-image">
+                        <img src="images for html/neberol.jpg" alt="NEBEROL">
+                        <span class="prescription-badge otc">Over The Counter</span>
+                    </div>
+                    <div class="medicine-info">
+                        <h3>NEBEROL</h3>
+                        <p class="generic-name">Generic Name: NEBEROL</p>
+                        <p class="description">Neberol forte is used to treat and control the following conditions: Pain in musculoskeletal disorders, muscle spasms in musculoskeletal disorders, Sprains and strains, muscle injury, pain in head, tooth, and ear.</p>
+                        <div class="medicine-meta">
+                            <span class="price">$8.99</span>
+                            <span class="stock">In Stock</span>
+                        </div>
+                        <div class="medicine-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="view-details">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="medicine-card" data-category="allergy" data-name="RIGIX">
+                    <div class="medicine-image">
+                        <img src="images for html/rigix-10mg.webp" alt="RIGIX">
+                        <span class="prescription-badge otc">Over The Counter</span>
+                    </div>
+                    <div class="medicine-info">
+                        <h3>RIGIX</h3> 
+                        <p class="generic-name">Generic Name: RIGIX</p>
+                        <p class="description">Oral antihistamines ease many symptoms of allergies. these inculde a runny nose, itchy or watery eyes, hives, and swelling. some of these medicines are available without a prescription. side effects inculde drowsiness, so use with caution if you need to drive or be alert.</p>
+                        <div class="medicine-meta">
+                            <span class="price">$12.99</span>
+                            <span class="stock">In Stock</span>
+                        </div>
+                        <div class="medicine-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="view-details">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="medicine-card" data-category="antibiotics" data-name="AZOMAX">
+                    <div class="medicine-image">
+                        <img src="images for html/azomax.webp" alt="AZOMAX">
+                        <span class="prescription-badge">Prescription Required</span>
+                    </div>
+                    <div class="medicine-info">
+                        <h3>AZOMAX</h3>
+                        <p class="generic-name">Generic Name: AZOMAX</p>
+                        <p class="description">Azomax capsule is used for the treatment of bacterial infections of the ears, thort, tonsils, airways, lungs and nasal passage, disease like chlamydia, skin and soft tissue infections.</p>
+                        <div class="medicine-meta">
+                            <span class="price">$15.99</span>
+                            <span class="stock">In Stock</span>
+                        </div>
+                        <div class="medicine-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="view-details">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="medicine-card" data-category="pain" data-name="Augmentin">
+                    <div class="medicine-image">
+                        <img src="images for html/angamatan.webp" alt="augmentin">
+                        <span class="prescription-badge otc">Over The Counter</span>
+                    </div>
+                    <div class="medicine-info">
+                        <h3>Augmentin</h3>
+                        <p class="generic-name">Generic Name: Augmentin</p>
+                        <p class="description">Augmentin is commonly used in adults and children to treat infections of the urinary tract, respiratory tract, ear, sinuses, and skin.</p>
+                        <div class="medicine-meta">
+                            <span class="price">$7.99</span>
+                            <span class="stock">In Stock</span>
+                        </div>
+                        <div class="medicine-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="view-details">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="medicine-card" data-category="cardiovascular" data-name="VOREN">
+                    <div class="medicine-image">
+                        <img src="images for html/voren.webp" alt="VOREN">
+                        <span class="prescription-badge">Prescription Required</span>
+                    </div>
+                    <div class="medicine-info">
+                        <h3>VOREN</h3>
+                        <p class="generic-name">Generic Name: VOREN</p>
+                        <p class="description">Voren is for inflammatory & degenerative forms of rheumatism, RA, ankylosing spondylitis, OA, spondylarthritis, non-articular rheumatism, acute gout, post-traumatic inflammation.</p>
+                        <div class="medicine-meta">
+                            <span class="price">$24.99</span>
+                            <span class="stock">In Stock</span>
+                        </div>
+                        <div class="medicine-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="view-details">Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="medicine-card" data-category="cardiovascular" data-name="FLAGYL">
+                    <div class="medicine-image">
+                        <img src="images for html/flagyl.webp" alt="FLAGYL">
+                        <span class="prescription-badge">Prescription Required</span>
+                    </div>
+                    <div class="medicine-info">
+                        <h3>FLAGYL</h3>
+                        <p class="generic-name">generic-name: FLAGYL </p>
+                        <p class="description">Flagyl is an antibiotic that is used to treat bacterial infections of the vagina, stomach, liver, skin, joints, brain and spinal cord, lungs, heart, or bloodstream.</p>
+                        <div class="medicine-meta">
+                            <span class="price">$20.79</span>
+                            <span class="stock">In Stock</span>
+                        </div>
+                        <div class="medicine-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="view-details">Details</button>
+                        </div>
+                    </div>
+                 </div>
+
+
+
+
+            </div>
+        </section>
+
+        <section class="medicine-info-section">
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Quality Assured</h3>
+                    <p>All medicines are FDA approved</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-truck"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Express shipping available</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-user-md"></i>
+                    <h3>Expert Consultation</h3>
+                    <p>24/7 pharmacist support</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="medicine-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-section company-info">
+                        <div class="">
+                
+                            <h2>Adapt.RX</h2>
+                        </div>
+                        <p>Your trusted partner in healthcare since 1995. We provide quality medicines and healthcare products worldwide.</p>
+                        <div class="footer-certifications">
+                            
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#prescriptions">Prescriptions</a></li>
+                            <li><a href="#shipping">Shipping</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Customer Service</h3>
+                        <ul>
+                            <li><a href="#faq">FAQs</a></li>
+                            <li><a href="#shipping-policy">Shipping Policy</a></li>
+                            <li><a href="#returns">Returns & Refunds</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#terms">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>Contact Us</h3>
+                        <div class="contact-info">
+                            <p><i class="fas fa-map-marker-alt"></i> 123 Medical Plaza, PECHS, KARACHI</p>
+                            <p><i class="fas fa-phone"></i> +92-234567890</p>
+                            <p><i class="fas fa-envelope"></i> info@adaptrx.com</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-middle">
+            <div class="container">
+                <div class="payment-section">
+                    <h3>Secure Payment Methods</h3>
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-discover"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Use</a>
+                    <a href="#cookies">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="medicine-list.js"></script>
+</body>
+</html> 

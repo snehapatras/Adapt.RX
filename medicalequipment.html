@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Equipment List | Adapt.RX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="medicalequipment.css">
+</head>
+<body>
+    <header class="equipment-header">
+        <div class="announcement-bar">
+            <p>Premium Medical Equipment | ISO Certified | Worldwide Shipping</p>
+        </div>
+
+        <nav class="main-nav">
+                <h1>Adapt.RX</h1>
+        
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="equipment.html" class="active">Equipment</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <div class="search-bar">
+                    <input type="text" id="equipmentSearch" placeholder="Search equipment...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="equipment-main">
+        <section class="equipment-filters">
+            <div class="filter-container">
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                    <option value="diagnostic">Diagnostic Equipment</option>
+                    <option value="surgical">Surgical Equipment</option>
+                    <option value="monitoring">Monitoring Devices</option>
+                    <option value="laboratory">Laboratory Equipment</option>
+                </select>
+                <select id="priceFilter">
+                    <option value="">Price Range</option>
+                    <option value="0-1000">$0 - $1,000</option>
+                    <option value="1000-5000">$1,000 - $5,000</option>
+                    <option value="5000+">$5,000+</option>
+                </select>
+                <select id="availabilityFilter">
+                    <option value="">Availability</option>
+                    <option value="instock">In Stock</option>
+                    <option value="preorder">Pre-order</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="equipment-list">
+            <div class="equipment-grid">
+                <!-- Diagnostic Equipment -->
+                <div class="equipment-card" data-category="diagnostic" data-price="2499">
+                    <span class="certification-badge">ISO Certified</span>
+                    <img src="images for html/12 lead ECG.webp" alt="Equipment Medical">
+                    <div class="equipment-info">
+                        <h3>12-Lead ECG Machine</h3>
+                        <p class="description">ECG machine is a primary equipment to record ECG signal in various configurations. 12 channels with interpretation is required for recording and analysing the waveforms with an inbuilt software.</p>
+                        <ul class="features">
+                            <li>High-resolution display</li>
+                            <li>USB connectivity</li>
+                            <li>Built-in thermal printer</li>
+                        </ul>
+                        <div class="price-info">
+                            <span class="price">$2,499</span>
+                            <span class="stock">In Stock</span>
+                        </div>
+                        <button class="request-quote">Request Quote</button>
+                    </div>
+                </div>
+
+                <div class="equipment-card" data-category="monitoring" data-price="3999">
+                    <span class="certification-badge">CE Marked</span>
+                    <img src="images for html/parameter patient.avif" alt="patient equipment">
+                    <div class="equipment-info">
+                        <h3>Multi-Parameter Patient Monitor</h3>
+                        <p class="description">A "multi-parameter patient monitor" is a medical device that simultaneously measures and display mutiple vital signs of a patient, such as heart rate, blood pressure, oxygen saturation (SpO2).</p>
+                        <ul class="features">
+                            <li>15" HD Display</li>
+                            <li>ECG/NIBP/SPO2/TEMP</li>
+                            <li>Wireless connectivity</li>
+                        </ul>
+                        <div class="price-info">
+                            <span class="price">$3,999</span>
+                            <span class="stock">In Stock</span>
+                        </div>
+                        <button class="request-quote">Request Quote</button>
+                    </div>
+                </div>
+
+                <div class="equipment-card" data-category="surgical" data-price="12999">
+                    <span class="certification-badge">FDA Approved</span>
+                    <img src="images for html/machine 123.jpg" alt="Surgical Equipment">
+                    <div class="equipment-info">
+                        <h3>Electric Surgical Table</h3>
+                        <p class="description">An electric surgical table is a table that uses an electric motor to move and position the table for surgery. they are designed to be stable and secure to reduce the risk of complications.</p>
+                        <ul class="features">
+                            <li>Electric height adjustment</li>
+                            <li>C-arm compatible</li>
+                            <li>Battery backup</li>
+                        </ul>
+                        <div class="price-info">
+                            <span class="price">$12,999</span>
+                            <span class="stock">Pre-order</span>
+                        </div>
+                        <button class="request-quote">Request Quote</button>
+                    </div>
+                </div>
+
+                <div class="equipment-card" data-category="laboratory" data-price="4999">
+                    <span class="certification-badge">ISO Certified</span>
+                    <img src="images for html/high-speed-refrigerated-centrifuge.jpg" alt="Laboratory Equipment">
+                    <div class="equipment-info">
+                        <h3>High-Speed Centrifuge</h3>
+                        <p class="description">A high speed centrifuge is a device that uses centrifugal force to seperate particles of different mass or </p>
+                        <ul class="features">
+                            <li>Variable speed control</li>
+                            <li>Digital display</li>
+                            <li>Safety lock system</li>
+                        </ul>
+                        <div class="price-info">
+                            <span class="price">$4,999</span>
+                            <span class="stock">In Stock</span>
+                        </div>
+                        <button class="request-quote">Request Quote</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="equipment-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="company-info">
+                    
+                    <h3>Adapt.RX Equipment</h3>
+                    <p>Your trusted source for medical equipment</p>
+                </div>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> +92-234567890</p>
+                    <p><i class="fas fa-envelope"></i> equipment@adaptrx.com</p>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Adapt.RX  All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
